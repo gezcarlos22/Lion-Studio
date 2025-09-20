@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main >
       <div className="w-[100%] h-[700px] sm:h-[700px] md:h-[700px] space-y-10 md:space-y-20" style={{backgroundImage: `url(${backgroundImage})`, borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
-        <div className="w-[100%] px-10 lg:px-20 space-y-10 md:space-y-20">
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 md:space-y-20">
           <Navbar navItems={navItems} />
           <Hero title={home.title} title2={home.title2} desc={home.desc} hasButton={true}/>
           <div className="w-full h-[450px] border-8 border-black rounded-2xl">
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center w-[100%] bg-[#000000] rounded-[50px]" style={{backgroundImage: `url(${backgroundService})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
-          <h2 className="text-5xl text-green font-extrabold p-10 uppercase">servicios</h2>
+          <h2 className="text-3xl md:text-5xl text-green font-extrabold p-10 uppercase">servicios</h2>
           <div className="flex justify-center lg:justify-end w-[90%] pb-10">
             <CardService/>
           </div>

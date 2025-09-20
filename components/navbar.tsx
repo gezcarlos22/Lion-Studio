@@ -45,8 +45,8 @@ export const Navbar: React.FC<FloatingNavProps> = ({ navItems }) => {
           src="/img/logo_a.png"
           alt="logotipo de LION STUDIO"
           className="object-cover"
-          width={75}
-          height={75}
+          width={50}
+          height={50}
           priority
         />
       </div>

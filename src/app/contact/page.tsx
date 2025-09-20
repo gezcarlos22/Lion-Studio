@@ -13,8 +13,8 @@ export default function Contact() {
     const footer = footerVideoData[1];
   return (
     <main >
-      <div className="relative w-[100%] h-[1200px] md:h-[1100px] lg:h-[700px] min-xl:h-[650px] space-y-10 md:space-y-20 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
-        <div className="w-[100%] px-10 lg:px-20 space-y-10 md:space-y-20">
+      <div className="relative w-[100%] h-[100%] sm:h-[1200px] md:h-[1100px] lg:h-[700px] min-xl:h-[650px] space-y-10 md:space-y-20 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 md:space-y-20">
           <Navbar navItems={navItems} />
           <HeroContact title={home.title} title2={home.title2} desc={home.desc}/>
         </div>

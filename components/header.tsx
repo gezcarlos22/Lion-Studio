@@ -44,7 +44,7 @@ export const HeroAbout = ({ title, title2, desc, hasButton = false }: HeroTitleP
                 </h1>
 
                 <div className="flex flex-row items-center justify-between">
-                    <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-white">
+                    <h2 className="text-md md:text-xl xl:text-2xl font-bold text-white">
                     {desc}
                     </h2>
                     {hasButton && <Button text="explorar" href="/"/>}

@@ -19,7 +19,7 @@ export default function Service() {
   return (
     <main >
       <div className="relative w-[100%] h-[1000px] md:h-[800px] lg:h-[800px] min-xl:h-[750px] space-y-10 md:space-y-20 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center', borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
-        <div className="w-[100%] px-10 lg:px-20 space-y-10 md:space-y-20">
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 md:space-y-20">
           <Navbar navItems={navItems} />
           <HeroAbout title={home.title} title2={home.title2} desc={home.desc}/>
         </div>
@@ -31,11 +31,11 @@ export default function Service() {
                   image={grabacion.image}
                   hight="650px" 
                   marginTop="-50px" 
-                  marginTopText="150px"
+                  marginTopText="50px"
                   isBackgroundBlack={true}
                 />
         </div>
-        <div className="w-[90%] mx-auto space-y-20 z-10 py-20">
+        <div className="w-[100%] p-5 md:p-10 lg:p-20  py-10 lg:py-20 md:space-y-10 lg:space-y-20">
           <Card
                       title={studio.title}
                       desc={studio.desc}

@@ -34,7 +34,8 @@ const CardService = () => {
             title={service.title}
             description={service.description}
             buttonHref={service.buttonHref}
-            height="250px"
+            height="200px"
+            width="full"
             isBackgroundBlack={true}
           />
         ))}

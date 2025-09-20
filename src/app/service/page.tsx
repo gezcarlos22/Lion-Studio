@@ -15,7 +15,7 @@ export default function Service() {
   return (
     <main >
       <div className="relative w-[100%] h-[700px] sm:h-[700px] md:h-[700px] space-y-10 md:space-y-20 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center', borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
-        <div className="w-[100%] px-10 lg:px-20 space-y-10 md:space-y-20 ">
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 md:space-y-20 ">
           <Navbar navItems={navItems} />
           <Hero title={home.title} title2={home.title2} desc={home.desc}/>
           <div className="w-full h-[450px] border-8 border-black rounded-2xl">

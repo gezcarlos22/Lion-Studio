@@ -22,11 +22,11 @@ export const FooterVideo = ({title, title2,desc,video}: FooterVideoProps) => {
               <source src={video} type="video/mp4"></source>
             </video>
           </div>
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-6 z-10">
-            <h2 className="text-4xl md:text-6xl font-extrabold text-white uppercase">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-6">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-white uppercase">
               {title}<span className="text-green">{title2}</span>
             </h2>
-            <div className="text-md md:text-3xl w-[60%] font-bold text-white">
+            <div className="text-md md:text-3xl w-[80%] md:w-[60%] font-bold text-white">
               <p className="mb-4">
                 {desc}
               </p>
@@ -42,18 +42,18 @@ export const FooterVideo = ({title, title2,desc,video}: FooterVideoProps) => {
 export const Footer = () => {
     return (
         <div className="flex flex-col h-[950px] md:h-[900px] lg:h-[550px] xl:lg:h-[500px] w-full items-center bg-[#000000] z-10">
-            <div className="w-[90%] space-y-10">
-                <div className="flex flex-col lg:flex-row justify-between items-center mt-[-65px]">
-                    <h2 className="text-4xl md:text-5xl/15 font-bold text-white uppercase">
+            <div className="w-[100%] px-5 md: md:px-10 lg:px-20 space-y-10">
+                <div className="flex flex-col lg:flex-row justify-between items-center mt-[-65px] md:mt-[-40px] lg:mt-[-45px] xl:mt-[-65px]">
+                    <h2 className="text-3xl md:text-5xl/15 font-bold text-white uppercase">
                         <span className="text-[#000000]">Sigeme por las redes</span> <br/>para ver proyectos <br/>profesionales de <span className="text-green"> Lion Studio.</span>
                     </h2>
-                    <div className="flex justify-center items-center bg-white w-[380px] h-[220px] border-8 border-black rounded-2xl">
-                        <div className="space-y-4">
-                            <div className="flex flex-row space-x-4"> 
+                    <div className="flex justify-center items-center bg-white p-2 md:w-[380px] md:h-[220px] border-8 border-black rounded-2xl">
+                        <div className="space-y-2">
+                            <div className="flex flex-row space-x-2"> 
                                 <ButtonRedes href="/" icons="youtube"/>
                                 <ButtonRedes href="/" icons="tiktok"/>
                             </div>
-                            <div className="flex flex-row space-x-4">
+                            <div className="flex flex-row space-x-2">
                                 <ButtonRedes href="/" icons="instagram"/>
                                 <ButtonRedes href="/" icons="twitter"/>
                             </div>
@@ -90,14 +90,14 @@ export const Footer = () => {
                             <p>(+54) 3544-111111</p>
                         </div>
                     </div>
-                    <div className="flex space-x-8 md:space-x-14">
+                    <div className="flex space-x-4 md:space-x-10">
                         {navItems.map((navItem, idx) => (
                         <Link
                             key={`link-${idx}-${navItem.name}`} // Cambiado a clave más única
                             href={navItem.link}
                             className="relative text-white items-center flex space-x-1 hover:text-green"
                         >
-                            <span className="font-bold text-sm md:text-lg cursor-pointer uppercase">{navItem.name}</span>
+                            <span className="font-bold text-xs md:text-lg cursor-pointer uppercase">{navItem.name}</span>
                         </Link>
                         ))}
                     </div>

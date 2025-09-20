@@ -35,7 +35,7 @@ const Card = ({id, title, desc, textButton, href = "/", image="/", reverseOrder 
           <Button2 text={textButton} href={href}/>
         </div>
       </div>
-      <img className="mx-10 rounded-4xl lg:mx-0 lg:px-0 lg:w-[500px] lg:h-[650px]" src={image} alt="Background" />
+      <img className=" rounded-4xl lg:mx-0 lg:px-0 lg:w-[500px] lg:h-[650px]" src={image} alt="Background" />
 
     </div>
   );
