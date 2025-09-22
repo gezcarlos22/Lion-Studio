@@ -38,17 +38,19 @@ export const Navbar: React.FC<FloatingNavProps> = ({ navItems }) => {
   }, []);
 
   return (
-    <nav className={`flex items-center justify-between py-2 w-full transition-all duration-100 ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 bg-[#000000]/80 backdrop-blur-sm px-10 lg:px-20' : 'relative'}`}>
+    <nav className={`flex items-center justify-between py-2 px-5 md:px-10 lg:px-20 w-full transition-all duration-100 z-20 ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 bg-[#000000]/80 backdrop-blur-sm px-5 md:px-10 lg:px-20' : 'relative'}`}>
       {/* Logo */}
       <div className="flex items-center">
-        <Image
-          src="/img/logo_a.png"
-          alt="logotipo de LION STUDIO"
-          className="object-cover"
-          width={50}
-          height={50}
-          priority
-        />
+        <Link href={"/"}>
+          <Image
+            src="/img/logo_a.png"
+            alt="logotipo de LION STUDIO"
+            className="object-cover"
+            width={50}
+            height={50}
+            priority
+          />
+        </Link>
       </div>
 
       {/* Links en desktop */}

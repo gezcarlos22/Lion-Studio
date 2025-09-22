@@ -68,31 +68,31 @@ export const servicesData = [
     image: "/img/micro-grabacion.jpg",
     title: "Grabaciones",
     description: "El espacio perfecto con equipo profesional para dar vida a tus ideas.",
-    buttonHref: "/grabaciones", // Ejemplo de href para el botón
+    buttonHref: "/service#1", // Ejemplo de href para el botón
   },
   {
     image: "/img/afinacion.jpeg",
     title: "Afinación de voces",
     description: "El arte de perfeccionar cada interpretación, corrigiendo sutilmente cualquier nota.",
-    buttonHref: "/afinacion",
+    buttonHref: "/service#2",
   },
   {
     image: "/img/mezcla-masterizacion.jpg",
     title: "Mezcla y Masterización",
     description: "Donde la magia sucede y el toque final que lo lleva todo al siguiente nivel.",
-    buttonHref: "/mezcla",
+    buttonHref: "/service#3",
   },
   {
     image: "/img/partitura.jpg",
     title: "Sonido de publicidad",
     description: "Dale a tu marca una identidad sonora que la haga inolvidable.",
-    buttonHref: "/composicion",
+    buttonHref: "/service#4",
   },
   {
     image: "/img/disco.jpg",
     title: "Beats",
     description: "Construye tu éxito con nuestros beats originales.",
-    buttonHref: "/produccion",
+    buttonHref: "/service#5",
   },
 ];
 
@@ -105,7 +105,7 @@ export const heroPrincipal = [
   {
     title:"sobre ",
     title2:"mi",
-    desc:"Hola, mi nombre es Esteban Chavero y soy el corazón detrás de Lion Studio. A mis 27 años, cuento con una sólida formación como Técnico Superior en Sonido de la reconocida escuela La Metro, además de ser un Productor Musical con especialización en el vibrante mundo de la Música Urbana. Mi relación con la música es un lazo que se forjó desde que tenía seis años; comenzó con la fascinación por aprender a tocar instrumentos como la guitarra y el teclado, y se ha nutrido con años de dedicación al estudio de la Composición Musical, llevándome hasta el conocimiento y la trayectoria que hoy pongo a tu servicio.",
+    desc:"Mi nombre es Esteban Chavero y soy el corazón detrás de Lion Studio. Cuento con una sólida formación como Técnico Superior en Sonido de la reconocida universidad La Metro, además de ser un Productor Musical con especialización en el vibrante mundo de la Música Urbana.",
   },
   {
     title:"servicios ",
@@ -150,7 +150,8 @@ export const servicesAll = [
     Ya seas solista o banda, nuestro ambiente está diseñado para inspirar tu creatividad y asegurar que cada toma refleje la verdadera esencia de tu arte.  
     
     Te acompañamos desde la configuración de micrófonos hasta la dirección de la sesión, garantizando que el proceso de grabación sea fluido, profesional y de la más alta calidad.`,
-    image:"/img/micro-grabacion.jpg"
+    image:"/img/micro-grabacion.jpg",
+    id:"1"
   },
   {
     title:"AFINACION DE VOCES",
@@ -161,7 +162,8 @@ export const servicesAll = [
     Utilizamos tecnología de punta para lograr una afinación impecable en voces e instrumentos, sin sacrificar la naturalidad ni la emoción de la toma original.  
     
     Este proceso es fundamental para que tu mezcla suene cohesionada y armónica, elevando la calidad de tu producción y dejando una impresión duradera en el oyente.`,
-    video:"/video/video-afinacion.mp4"
+    video:"/video/video-afinacion.mp4",
+    id:"2"
   },
   {
     title:"SONIDOS DE PUBLICIDAD",
@@ -170,7 +172,8 @@ export const servicesAll = [
     Nos especializamos en la creación de jingles y bandas sonoras originales diseñadas para conectar con tu audiencia y reforzar tu mensaje de marca.   
     
     Ya sea que necesites un audio energético para un anuncio de televisión, un jingle pegadizo para la radio o un fondo emotivo para un video corporativo, nuestro equipo creativo trabaja de la mano contigo para componer y producir un sonido único que capte la atención y haga que tu marca destaque en cualquier plataforma.`,
-    image:"/img/partitura.jpg"
+    image:"/img/partitura.jpg",
+    id:"4"
   },
   {
     title:"MEZCLA Y MASTERIZACION",
@@ -181,7 +184,8 @@ export const servicesAll = [
     Con la mezcla, balanceamos cada pista para que cada elemento tenga su espacio.  
     
     Con la masterización, optimizamos tu canción para que suene perfecta en todas las plataformas de streaming, dispositivos y sistemas de sonido, asegurando que tu música impacte a cualquier oyente.`,
-    video:"/video/video2.mp4"
+    video:"/video/video2.mp4",
+    id:"3"
   },
   {
     title:"BEATS",
@@ -192,7 +196,8 @@ export const servicesAll = [
     Nuestros productora está al tanto de las últimas tendencias y te ofrecen un sonido único que se alinea con tu visión artística.   
     
     Trabajamos contigo para crear un beat que no solo suene increíble, sino que también cuente la historia que quieres transmitir.`,
-    image:"/img/disco.jpg"
+    image:"/img/disco.jpg",
+    id:"5"
   },
   {
     title:"MI ESTUDIO",
@@ -201,59 +206,60 @@ export const servicesAll = [
     Es aquí donde mi formación técnica se une con mi experiencia musical para ofrecerte un servicio de producción integral y de alta calidad. 
 
     Cada proyecto que llega a Lion Studio es tratado con el máximo cuidado y profesionalismo, desde la captura inicial de una idea hasta el pulido final que la hará destacar.`,
-    image:"/img/La_Metro.jpg"
+    image:"/img/La_Metro.jpg",
+    id:"6"
   },
 ];
 
 export const portfolio = [
   {
     id:"proyecto_1",
-    title:"proyecto 1",
+    title:"ES-T Enamorado",
     desc: `Lion Studio es un proyecto que nace en 2019, proveniente de mi formación como Técnico Superior en Sonido.
 
        A todo esto, te preguntarás quién soy. Bueno, mi nombre es Esteban Chavero, quien está detrás de Lion Studio. Tengo 27 años, soy Técnico Superior en Sonido de La Metro - Escuela de Diseño y Comunicación Audiovisual y Productor Musical especializado en Música Urbana."
 
        Desde los 6 años comparto un sentimiento por la música, desde aprender a tocar instrumentos como la guitarra y el teclado, hasta estudiar Composición Musical y llegar a los conocimientos y trayectoria que tengo hoy en día.`,
-    textButton: "conoceme",
-    href: "/about",
-    image: "/img/estudio_est.jpg",
+    textButton: "Ver Video",
+    href: "https://www.youtube.com/watch?v=tw4tjxfJQiY",
+    video: "/img/Proyectos/1/est_video.mp4",
     imgCarousel: [
       {
-        image:"/img/lion1.jpg",
-        alt:"leon1"
+        image:"/img/Proyectos/1/Portada.png",
+        alt:"Portada"
       },
       {
-        image:"/img/lion2.jpg",
-        alt:"leon2"
+        image:"/img/Proyectos/1/est_1.png",
+        alt:"foto1"
       },
       {
-        image:"/img/lion3.jpg",
-        alt:"leon3"
+        image:"/img/Proyectos/1/est_2.png",
+        alt:"foto2"
       }
     ]
   },
   {
     id:"proyecto_2",
-    title:"proyecto 2",
+    title:"ES-T HECHA PA MI",
     desc: `Lion Studio es un proyecto que nace en 2019, proveniente de mi formación como Técnico Superior en Sonido.
 
        A todo esto, te preguntarás quién soy. Bueno, mi nombre es Esteban Chavero, quien está detrás de Lion Studio. Tengo 27 años, soy Técnico Superior en Sonido de La Metro - Escuela de Diseño y Comunicación Audiovisual y Productor Musical especializado en Música Urbana."
 
        Desde los 6 años comparto un sentimiento por la música, desde aprender a tocar instrumentos como la guitarra y el teclado, hasta estudiar Composición Musical y llegar a los conocimientos y trayectoria que tengo hoy en día.`,
-    textButton: "conoceme",
-    href: "/about",
-    image: "/img/estudio_est.jpg",
+    textButton: "Ver Video",
+    href: "https://www.youtube.com/watch?v=qE8m1hTTfk8",
+    video: "/img/Proyectos/2/est_video.mp4",
     imgCarousel: [
       {
-        image:"/img/lion1.jpg",
+        image:"/img/Proyectos/2/Portada.png",
         alt:"leon1"
       },
       {
-        image:"/img/lion2.jpg",
+        image:"/img/Proyectos/2/est_1.png",
         alt:"leon2"
       },
       {
-        image:"/img/lion3.jpg",
+        image:"/img/Proyectos/2/est_2.png",
         alt:"leon3"
       }
     ]

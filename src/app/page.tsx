@@ -15,13 +15,13 @@ export default function Home() {
   const footer = footerVideoData[0];
   return (
     <main >
-      <div className="w-[100%] h-[700px] sm:h-[700px] md:h-[700px] space-y-10 md:space-y-20" style={{backgroundImage: `url(${backgroundImage})`, borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
-        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 md:space-y-20">
-          <Navbar navItems={navItems} />
+      <Navbar navItems={navItems} />
+      <div className="w-[100%] h-[750px] space-y-10 md:space-y-20 -mt-20" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center',  borderBottomLeftRadius:50, borderBottomRightRadius:50,}}>
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 ">
           <Hero title={home.title} title2={home.title2} desc={home.desc} hasButton={true}/>
-          <div className="w-full h-[450px] border-8 border-black rounded-2xl">
+          <div className="w-full h-[400px] xl:h-[500px] border-8 border-black rounded-2xl">
             <video autoPlay muted style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:8}} loop>
-            <source src={"/video/video1.mp4"} type="video/mp4"></source>
+              <source src={"/video/video1.mp4"} type="video/mp4"></source>
             </video>
           </div>
           <Card

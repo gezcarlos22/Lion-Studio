@@ -8,7 +8,7 @@ import Card from "../../../components/card";
 import { CarouselImg } from "../../../components/carousel";
 
 
-export default function Service() {
+export default function Portfolio() {
   const backgroundImage = "/img/background.png";
   const project1 = portfolio[0];
   const project2 = portfolio[1];
@@ -16,22 +16,24 @@ export default function Service() {
   const footer = footerVideoData[0];
   return (
     <main >
-      <div className=" w-[100%] h-[700px] sm:h-[700px] md:h-[700px] space-y-10 md:space-y-20 z-10 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center', borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
-        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 lg:space-y-20">
-          <Navbar navItems={navItems} />
+      <Navbar navItems={navItems} />
+      <div className="relative w-[100%] h-[750px] space-y-10 md:space-y-20 -mt-20 z-10" style={{backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover', backgroundPosition: 'center', borderBottomLeftRadius:50, borderBottomRightRadius:50}}>
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10">
           <Hero title={home.title} title2={home.title2} desc={home.desc}/>
-          <div className="w-full h-[450px] border-8 border-black rounded-2xl">
+          <div className="w-full h-[400px] xl:h-[500px] border-8 border-black rounded-2xl">
             <video autoPlay muted style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:8}} loop>
             <source src={"/video/video-grupo.mp4"} type="video/mp4"></source>
             </video>
           </div>
+        </div>
+        <div className="w-[100%] px-5 md:px-10 lg:px-20 space-y-10 lg:space-y-20">
           <Card
             id={project1.id}
             title={project1.title}
             desc={project1.desc}
             textButton={project1.textButton}
             href={project1.href}
-            image={project1.image}
+            video={project1.video}
             reverseOrder={true}
           />
           <CarouselImg
@@ -43,7 +45,7 @@ export default function Service() {
             desc={project2.desc}
             textButton={project2.textButton}
             href={project2.href}
-            image={project2.image}
+            video={project2.video}
           />
           <CarouselImg
               images={project2.imgCarousel}

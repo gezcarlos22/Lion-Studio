@@ -8,17 +8,19 @@ interface HeroTitleProps {
   textButton?: string;
   href?: string;
   image?: string;
+  video?: string;
   reverseOrder?:boolean;
 }
 
-const Card = ({id, title, desc, textButton, href = "/", image="/", reverseOrder = false, }: HeroTitleProps) => {
+const Card = ({id, title, desc, textButton, href = "/", image = "/", video, reverseOrder = false}: HeroTitleProps) => {
 
   const contentClasses = `
     flex flex-col justify-around w-full gap-10 lg:flex-row
     ${reverseOrder ? 'flex-col-reverse lg:flex-row-reverse' : ''}
   `;
 
-  const buttonOrder = `${reverseOrder? 'flex justify-end' : ''}`;
+  const buttonOrder = `${reverseOrder ? 'flex justify-end' : ''}`;
+  const mediaClasses = "rounded-4xl lg:mx-0 lg:px-0 lg:w-[500px] lg:h-[650px]";
 
   return (
     <div className={contentClasses}>
@@ -35,8 +37,22 @@ const Card = ({id, title, desc, textButton, href = "/", image="/", reverseOrder 
           <Button2 text={textButton} href={href}/>
         </div>
       </div>
-      <img className=" rounded-4xl lg:mx-0 lg:px-0 lg:w-[500px] lg:h-[650px]" src={image} alt="Background" />
-
+      
+      {/* Render condicional de imagen o video */}
+      {video ? (
+        <video 
+          autoPlay 
+          muted 
+          loop
+          className={mediaClasses}
+          style={{objectFit: "cover"}}
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+      ) : (
+        <img className={mediaClasses} src={image} alt="Background" />
+      )}
+      
     </div>
   );
 };

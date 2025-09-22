@@ -21,6 +21,7 @@ interface ServiceProps {
   isBackgroundBlack?: boolean;
   alineText?:boolean;
   textColor?:string;
+  id:string;
 }
 
 export const ServiceContent = ({
@@ -34,7 +35,8 @@ export const ServiceContent = ({
   background,
   isBackgroundBlack = false,
   alineText=false,
-  textColor
+  textColor,
+  id
 }: ServiceProps) => {
 
   const containerStyle = {
@@ -57,7 +59,7 @@ export const ServiceContent = ({
   const alineTextContent = alineText ? "text-right" : 'text-left'
 
   return (
-    <div className={`relative w-full overflow-hidden`} style={containerStyle}>
+    <div id={id} className={`relative w-full overflow-hidden ${id}`} style={containerStyle}>
       <div className={`absolute inset-0 z-0 ${cardContainerClasses}` }>
             {video ? (
             <video 
@@ -110,10 +112,11 @@ export const AllServices = () => {
         title={grabacion.title} 
         desc={grabacion.desc} 
         image={grabacion.image}
-        hight="750px" 
+        hight="700px" 
         marginTop="-50px" 
         marginTopText="75px"
         isBackgroundBlack={true}
+        id={grabacion.id}
       />
       <ServiceContent
         title={afinacion.title} 
@@ -123,6 +126,7 @@ export const AllServices = () => {
         isBackgroundBlack={false}
         alineText={true}
         textColor="text-black"
+        id={afinacion.id}
       />
       <ServiceContent
         title={sonido.title} 
@@ -130,6 +134,7 @@ export const AllServices = () => {
         image={sonido.image}
         hight="600px"
         isBackgroundBlack={true}
+        id={sonido.id}
       />
       <ServiceContent
         title={mescla.title} 
@@ -139,13 +144,15 @@ export const AllServices = () => {
         background="bg-green"
         alineText={true}
         textColor="text-black"
+        id={mescla.id}
       />
       <ServiceContent
         title={beats.title} 
         desc={beats.desc} 
         image={beats.image}
-        hight="650px" 
+        hight="600px" 
         isBackgroundBlack={true}
+        id={beats.id}
       />
     </div>
   );

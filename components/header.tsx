@@ -12,7 +12,7 @@ interface HeroTitleProps {
 
 export const Hero = ({ title, title2, desc, hasButton = false }: HeroTitleProps) => {
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 pt-30">
             <h3 className="text-ms md:text-lg font-bold text-white tracking-[10px]">
                 LION STUDIO
             </h3>
@@ -31,43 +31,15 @@ export const Hero = ({ title, title2, desc, hasButton = false }: HeroTitleProps)
     );
 };
 
-export const HeroAbout = ({ title, title2, desc, hasButton = false }: HeroTitleProps) => {
-    return (
-        <div className="flex flex-col lg:flex-row justify-between gap-10 ">
-            <div className="space-y-6 w-full lg:w-2/4">
-                <h3 className="text-ms md:text-lg font-bold text-white tracking-[10px]">
-                    LION STUDIO
-                </h3>
-
-                <h1 className="text-4xl md:text-7xl font-extrabold text-white uppercase">
-                    {title}<span className="text-green"> {title2}</span>
-                </h1>
-
-                <div className="flex flex-row items-center justify-between">
-                    <h2 className="text-md md:text-xl xl:text-2xl font-bold text-white">
-                    {desc}
-                    </h2>
-                    {hasButton && <Button text="explorar" href="/"/>}
-                </div>
-            </div>
-            <div className="w-full h-[450px] lg:w-[600px] lg:h-[725px] border-8 border-black rounded-2xl">
-                <video autoPlay muted style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:8}} loop>
-                    <source src={"/video/video-grupo.mp4"} type="video/mp4"></source>
-                </video>
-            </div>
-        </div>
-    );
-};
-
 export const HeroContact= ({ title, title2, desc, hasButton = false }: HeroTitleProps) => {
     return (
-        <div className="flex flex-col lg:flex-row justify-between space-y-10">
-            <div className="space-y-6 w-full lg:w-2/4">
+        <div className="w-full flex flex-col lg:flex-row pt-30 gap-10">
+            <div className="space-y-6">
                 <h3 className="text-ms md:text-lg font-bold text-white tracking-[10px]">
                     LION STUDIO
                 </h3>
 
-                <h1 className="text-4xl md:text-7xl font-extrabold text-white uppercase">
+                <h1 className="text-4xl md:text-5xl xl:text-7xl font-extrabold text-white uppercase">
                     {title}<span className="text-green"> {title2}</span>
                 </h1>
 
@@ -78,7 +50,7 @@ export const HeroContact= ({ title, title2, desc, hasButton = false }: HeroTitle
                     {hasButton && <Button text="explorar" href="/"/>}
                 </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mb-5">
                 <FormularioContacto/>
             </div>
         </div>

@@ -31,7 +31,7 @@ export const FooterVideo = ({title, title2,desc,video}: FooterVideoProps) => {
                 {desc}
               </p>
             </div>
-            <Button text="CONTACTAME" href="/" />
+            <Button text="CONTACTAME" href="/contact" />
           </div>
         </div>
         
@@ -41,20 +41,20 @@ export const FooterVideo = ({title, title2,desc,video}: FooterVideoProps) => {
 
 export const Footer = () => {
     return (
-        <div className="flex flex-col h-[950px] md:h-[900px] lg:h-[550px] xl:lg:h-[500px] w-full items-center bg-[#000000] z-10">
+        <div className="flex flex-col h-full w-full items-center bg-[#000000] z-10 pb-[160px] sm:pb-[100px]">
             <div className="w-[100%] px-5 md: md:px-10 lg:px-20 space-y-10">
-                <div className="flex flex-col lg:flex-row justify-between items-center mt-[-65px] md:mt-[-40px] lg:mt-[-45px] xl:mt-[-65px]">
+                <div className="flex flex-col lg:flex-row justify-between items-center mt-[-65px] md:mt-[-40px] lg:mt-[-45px] xl:mt-[-65px] ">
                     <h2 className="text-3xl md:text-5xl/15 font-bold text-white uppercase">
                         <span className="text-[#000000]">Sigeme por las redes</span> <br/>para ver proyectos <br/>profesionales de <span className="text-green"> Lion Studio.</span>
                     </h2>
                     <div className="flex justify-center items-center bg-white p-2 md:w-[380px] md:h-[220px] border-8 border-black rounded-2xl">
                         <div className="space-y-2">
                             <div className="flex flex-row space-x-2"> 
-                                <ButtonRedes href="/" icons="youtube"/>
+                                <ButtonRedes href="https://www.youtube.com/@lionstudio4511" icons="youtube"/>
                                 <ButtonRedes href="/" icons="tiktok"/>
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <ButtonRedes href="/" icons="instagram"/>
+                                <ButtonRedes href="https://www.instagram.com/lionstudio.cba/" icons="instagram"/>
                                 <ButtonRedes href="/" icons="twitter"/>
                             </div>
                             
@@ -105,7 +105,7 @@ export const Footer = () => {
                 <div className="bg-white w-full h-[50px] mt-10 pt-[2px] rounded-full">
                     <div className="bg-[#000000] w-full h-[50px] rounded-full">
                         <div className="flex flex-col justify-center items-center text-center text-neutral-500 text-sm uppercase pt-5">
-                            <h3>Impulsamos artistas y empresas a través de nuestros servicios discográficos como productora.</h3>
+                            <h3>Impulsamos artistas y empresas a través de nuestros servicios.</h3>
                             <h4>© 2025 lion studio Todos Los Derechos Reservados. <Link href={"/"}><span className="text-white">Productora Musical.</span></Link></h4>
                             <Link href={"https://gez-carlos.vercel.app/"}>
                             <div className="flex flex-col justify-center items-center text-green ">                                

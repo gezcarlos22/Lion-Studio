@@ -26,7 +26,7 @@ const FormularioContacto = () => {
   };
 
   return (
-    <div className="w-[600px] h-[725px] border-8 border-black rounded-2xl bg-white flex items-center justify-center p-4">
+    <div className="w-[500px] h-[700px] border-8 border-black rounded-2xl bg-white flex items-center justify-center p-4">
       <div className="w-full max-w-lg">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
